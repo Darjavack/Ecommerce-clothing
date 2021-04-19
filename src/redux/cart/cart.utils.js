@@ -16,3 +16,16 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
 
   return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 };
+
+export const decreaseItemQuantity = (cartItems, cartItemToDecrease) => {
+  return cartItems.map((cartItem) =>
+    cartItem.id === cartItemToDecrease.id
+      ? {
+          ...cartItem,
+          quantity: cartItem.quantity - 1,
+        }
+      : cartItem
+  );
+};
+
+export const removeItemFromCart = (cartItems, cartItemToRemove) => {};
