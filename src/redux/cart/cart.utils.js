@@ -27,5 +27,3 @@ export const decreaseItemQuantity = (cartItems, cartItemToDecrease) => {
       : cartItem
   );
 };
-
-export const removeItemFromCart = (cartItems, cartItemToRemove) => {};
