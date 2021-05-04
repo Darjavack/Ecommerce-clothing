@@ -9,7 +9,6 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 import Header from "./components/header/header.component";
-import { JacketsPage } from "./pages/jackets/jackets-page.component";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import Checkout from "./pages/checkout/checkout.component";
 
@@ -57,7 +56,6 @@ class App extends Component {
               )
             }
           />
-          <Route path="/shop/jackets" component={JacketsPage} />
         </Switch>
       </div>
     );
